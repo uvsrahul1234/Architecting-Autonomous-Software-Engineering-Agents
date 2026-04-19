@@ -1,0 +1,14 @@
+# LLM and Agent Framework
+langchain>=0.1.0
+langgraph>=0.0.20
+langchain-openai
+langchain-community
+
+# Vector Database and Embeddings (RAG)
+chromadb
+sentence-transformers
+
+# Data Handling and Sandbox Execution
+pandas
+docker
+pytest
