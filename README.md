@@ -41,3 +41,41 @@ The system has been rigorously evaluated against the **SWE-bench Lite** dataset,
    ```bash
    git clone [https://github.com/YOUR_GITHUB_USERNAME/ARM.git](https://github.com/YOUR_GITHUB_USERNAME/ARM.git)
    cd ARM
+   ```
+   
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+   
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+4. Environment Variables:
+Create a .env file in the root directory and add your necessary configuration:
+   ```bash
+   LLM_API_KEY=your_api_key_here
+   PORT=8000
+   ENVIRONMENT=development
+   ```
+
+5. Running the API Server
+Start the FastAPI application using Uvicorn:
+   ```bash
+   uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+   ```
+
+Example cURL Request to trigger the agent:
+```bash
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/agent/solve' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "repository_url": "[https://github.com/example/repo](https://github.com/example/repo)",
+  "issue_description": "Fix the race condition in the authentication middleware."
+}'
+```
