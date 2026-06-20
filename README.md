@@ -1,1 +1,43 @@
-Abstract
+# ARM (Autonomous Reliable Mechanism) 🤖⚙️
+
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-Agentic_AI-orange.svg)](https://python.langchain.com/docs/langgraph)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**ARM** is a modular, high-performance Python backend system functioning as an autonomous AI Software Engineering Agent. Designed to bridge the gap between large language models and practical software engineering execution, ARM autonomously navigates, analyzes, and resolves complex coding tasks.
+
+## 🚀 Overview
+
+Modern software development requires reliable automation. ARM leverages an agentic workflow to act as a virtual software engineer. It doesn't just generate code snippets; it understands repository structures, debugs issues, and implements multi-file solutions. 
+
+The system has been rigorously evaluated against the **SWE-bench Lite** dataset, demonstrating its capability to handle real-world GitHub issues and pull requests autonomously.
+
+## ✨ Key Features
+
+* **Autonomous Task Resolution:** Capable of understanding complex problem statements and independently navigating codebases to implement fixes.
+* **Agentic Orchestration:** Built on **LangGraph** to manage complex, multi-step reasoning loops, state management, and tool execution.
+* **High-Performance API:** Exposes agent capabilities through a robust, asynchronous **FastAPI** backend, making it easy to integrate into CI/CD pipelines or custom frontends.
+* **Production-Ready Modularity:** Clean architecture designed for scalability, allowing for easy swapping of underlying LLMs or execution tools.
+* **Benchmarked Reliability:** Evaluated against SWE-bench Lite to ensure consistent, measurable performance on standard software engineering tasks.
+
+## 🛠️ Technology Stack
+
+* **Core Language:** Python 3.10+
+* **Framework:** FastAPI
+* **Agent Orchestration:** LangGraph / LangChain
+* **Deployment & Containerization:** Docker (Recommended)
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+* Python 3.10 or higher
+* `pip` or `poetry` for dependency management
+* API keys for your chosen LLM provider (e.g., OpenAI, Anthropic)
+
+### Local Environment Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YOUR_GITHUB_USERNAME/ARM.git](https://github.com/YOUR_GITHUB_USERNAME/ARM.git)
+   cd ARM
