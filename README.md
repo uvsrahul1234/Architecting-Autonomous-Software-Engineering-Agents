@@ -1,4 +1,9 @@
-# ARM (Autonomous Reliable Mechanism)
+# ARM (Autonomous Reliable Mechanism) 🤖⚙️
+
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-Agentic_AI-orange.svg)](https://python.langchain.com/docs/langgraph)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **ARM** is a modular, high-performance Python backend system functioning as an autonomous AI Software Engineering Agent. Designed to bridge the gap between large language models and practical software engineering execution, ARM autonomously navigates, analyzes, and resolves complex coding tasks.
 
